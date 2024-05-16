@@ -1,0 +1,104 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "brother": [
+    {
+      "id": 1,
+      "name": "Naveed Qasim",
+      "age": 32
+    },
+    {
+      "id": 2,
+      "name": "Nadeem Qasim",
+      "age": 30
+    },
+    {
+      "id": 3,
+      "name": "Naeem Qasim",
+      "age": 28
+    },
+    {
+      "id": 4,
+      "name": "Waheed Qasim",
+      "age": 27
+    },
+    {
+      "id": 5,
+      "name": "Waseem Qasim",
+      "age": 26
+    },
+    {
+      "id": 6,
+      "name": "Saleem Qasim",
+      "age": 25
+    },
+    {
+      "id": 7,
+      "name": "Nida Rasheed",
+      "age": 25
+    }
+  ],
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Saleem Qasim",
+      "address": "Lahore",
+      "rating": 4.5,
+      "email": "saleem@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Saif BBQ",
+      "address": "Lahore",
+      "rating": 4.5,
+      "email": "saif@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Saeed BBQ",
+      "address": "skp",
+      "rating": 4.5,
+      "email": "Saeed@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "Yasir Brost",
+      "address": "lahore",
+      "rating": 4.7,
+      "email": "yasir@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "seemer Brost",
+      "address": "multan",
+      "rating": 4.5,
+      "email": "seemer@gmail.com"
+    },
+    {
+      "name": "sega bbq foods",
+      "address": "islamabad",
+      "rating": "4.8",
+      "email": "sega@gmail.com",
+      "id": 8
+    },
+    {
+      "name": "red bull hot bbq",
+      "address": "faisalabad",
+      "rating": "4.5",
+      "email": "redbull@gmail.com",
+      "id": 9
+    },
+    {
+      "name": "wide range food",
+      "address": "lahore",
+      "rating": "4.5",
+      "email": "wide@gmail.com",
+      "id": 10
+    }
+  ]
+}

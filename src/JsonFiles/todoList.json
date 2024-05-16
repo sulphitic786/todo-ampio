@@ -1,0 +1,36 @@
+{
+  "todoList": [
+    {
+			"id": "43",
+			"title": "Grocery",
+			"active": true,
+			"status": "completed",
+			"updatedTime": "13/08/2021",
+			"createdTime": "13/08/2021 23:27:22"
+		},
+    {
+			"id": "44",
+			"title": "Fruits",
+			"active": true,
+			"status": "inprogress",
+			"updatedTime": "13/08/2021",
+			"createdTime": "13/08/2021 23:27:22"
+		},
+    {
+			"id": "45",
+			"title": "Fruits",
+			"active": true,
+			"status": "completed",
+			"updatedTime": "13/08/2021 23:27:22",
+			"createdTime": "13/08/2021 23:27:22"
+		},
+    {
+			"id": "46",
+			"title": "Fruits",
+			"active": true,
+			"status": "deleted",
+			"updatedTime": "13/08/2021 23:27:22",
+			"createdTime": "13/08/2021 23:27:22"
+		}
+  ]
+}
