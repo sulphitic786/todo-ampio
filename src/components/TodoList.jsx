@@ -1,7 +1,5 @@
 import React from "react";
-import todoList from '../JsonFiles/todoList.json'
-import { ListItem, ListItemText, IconButton, Button, Menu, MenuItem, Box, Typography  } from "@mui/material";
-import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import { ListItem, IconButton, Menu, MenuItem, Box, Typography  } from "@mui/material";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemButton from "@mui/material/ListItemButton";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
@@ -23,7 +21,7 @@ const TodoList = (props) => {
 
   return (
     <ListItem
-    disabled={props?.item?.status == "deleted" ? true : false}
+    disabled={props?.item?.status === "deleted" ? true : false}
       sx={{
         boxShadow: 1,
         margin: 1,
@@ -37,9 +35,9 @@ const TodoList = (props) => {
       <ListItem disablePadding>
         <ListItemButton>
           <ListItemIcon>
-            {props?.item?.status =="inprogress"?
+            {props?.item?.status ==="inprogress"?
             <RadioButtonUncheckedIcon color='info' />
-            :props?.item?.status == "completed"?
+            :props?.item?.status === "completed"?
             <CheckCircleIcon color='success' />
             :<CancelOutlinedIcon color='error' />
             }
@@ -51,7 +49,7 @@ const TodoList = (props) => {
           </Typography>
         </Box>
         </ListItemButton>
-        {props?.item?.status =="inprogress"?
+        {props?.item?.status ==="inprogress"?
         <>
         <IconButton
         id="demo-positioned-button"

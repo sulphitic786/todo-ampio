@@ -1,9 +1,8 @@
 import React, { useState, useEffect  } from 'react';
 import TodoList from './TodoList';
-import { Container, Box, Card, CardContent, Typography, TextField, IconButton, List, Icon } from '@mui/material';
+import { Container, Box, Card, CardContent, Typography, TextField, IconButton, List } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import todoListData from '../JsonFiles/todoList.json'
-import Swal from 'sweetalert2'
 
 const Todo = () => {
   const [inputList, setInputList] = useState("");
@@ -34,14 +33,14 @@ const formatDate = (date) => new Date(date).toLocaleString('en-GB', { hour12: fa
   const handleAddItem = () => {
     if(inputList){
     let newItem ={
-			"id": action == "update" ? editData?.id : new Date().getTime(),
+			"id": action === "update" ? editData?.id : new Date().getTime(),
 			"title": inputList,
 			"active": true,
 			"status": "inprogress",
 			"updatedTime": formatDate(new Date()),
-			"createdTime": action == "update" ? editData?.createdTime : formatDate(new Date())
+			"createdTime": action === "update" ? editData?.createdTime : formatDate(new Date())
 		}
-    action == "update" ?
+    action === "update" ?
     setItems((oldItems) => 
       oldItems.map((i) => 
         i.id === editData.id ? newItem : i
@@ -51,7 +50,7 @@ const formatDate = (date) => new Date(date).toLocaleString('en-GB', { hour12: fa
     setItems((oldItems) => {
       return [...oldItems, newItem];
     });
-    Swal.fire(action == "update" ? "Todo update successfully!" : "Todo added successfully", "", "success");
+    Swal.fire(action === "update" ? "Todo update successfully!" : "Todo added successfully", "", "success");
     setInputList('');
     setAction('');
     setEditData(null)
